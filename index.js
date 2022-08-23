@@ -94,7 +94,6 @@ window.onclick = function (e) {
 const arrowLeft = document.querySelector("#left");
 const arrowRight = document.querySelector("#right");
 
-console.log(allImages);
 
 let imgIndex;
 
@@ -124,32 +123,3 @@ arrowLeft.addEventListener("click", () => {
   modalImg.setAttribute("src", imgData[imgIndex].src);
 });
 
-// arrowLeft.addEventListener("click", () => {
-//   const modalImg = document.querySelector(".modalImg");
-//   for (let i = 0; i < imgData.length; i++) {
-//     if (imgData[i].src === modalImg.src) {
-//       console.log(i);
-//       if (i - 1 < 0) {
-//         i = imgData.length;
-//       }
-//       modalImg.setAttribute("src", imgData[i - 1].src);
-//     }
-//   }
-// });
-
-// arrowRight.addEventListener("click", () => {
-//   const modalImg = document.querySelector(".modalImg");
-//   for (let i = 0; i < imgData.length; i++) {
-//     if (modalImg.src === imgData[i].src) {
-//       console.log(i);
-//       console.log("beleka");
-//       console.log(modalImg.src);
-//       console.log(imgData[i + 1].src);
-//       modalImg.setAttribute("src", imgData[i + 1].src);
-//     }
-// if (imgData[i].src === modalImg.src) {
-//   if (i + 1 > imgData.length) {
-//     i = 0;
-//   }
-//   modalImg.setAttribute("src", imgData[i+1].src);
-// }
