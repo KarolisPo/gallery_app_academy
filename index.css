@@ -1,0 +1,45 @@
+#app {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 29px 0;
+  justify-content: center;
+  background-color: #c4c4c4;
+}
+
+.img {
+  flex: 1;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalImg {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 700px) {
+  #app {
+    width: 90%;
+    min-width: 320px;
+  }
+}
